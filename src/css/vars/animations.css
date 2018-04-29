@@ -1,0 +1,93 @@
+@import "vars/colors";
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shrinkHeight {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform-origin: 0 0;
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform-origin: 0 0;
+        transform: translateX(100%);
+    }
+}
+@keyframes aSquishbounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0) scaleY(0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20%, 0) scaleY(1.2);
+  }
+
+  75% {
+    transform: translate3d(0, -10%, 0) scaleY(1.1);
+  }
+
+  90% {
+    transform: translate3d(0, -5%, 0) scaleY(1);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) scaleY(1);
+  }
+}
+
+.aInstruction {
+  animation-name: aSquishbounceInUp;
+  animation-duration: .3s;
+}
+
+.aBounce {
+    animation: bounceAnimationn 0.4s infinite;
+}
+
+.aHide {
+    animation: fadeOut 0.4s 1;
+}
+
+.aShow {
+    animation: fadeIn 0.4s 1 ;
+}
+
+.aShow--slow {
+    animation: fadeIn 2s 1 ;
+    animation-timing-function: ease-out-expo;
+}
+
+.aSlideRight {
+    //animation: slideRight 0.4s 1;
+}

@@ -1,0 +1,49 @@
+{
+  "ignore": ["node_modules"],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "transform-decorators-legacy"
+  ],
+  "env":
+  {
+    "development":
+    {
+      "presets": [
+        ["@babel/preset-env",
+        {
+          "targets":
+          {
+            "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+          }
+        }],
+        ["@babel/preset-react",
+        {
+          "development": true,
+        }],
+      ],
+    },
+    "production":
+    {
+      "presets": [
+        ["@babel/preset-env",
+        {
+          "targets":
+          {
+            "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+          }
+        }],
+        "@babel/preset-react",
+      ],
+    },
+    "test":
+    {
+      "plugins": [
+        ["__coverage__",
+        {
+          "ignore": "*.+(test|stub).*"
+        }]
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+:root {
+    --tr-speed: 0.2s;
+    --speed--enter: 0.15s;
+    --speed--leave: 0.4s;
+    --speed--leave--fast: 0.15s;
+    --t-icons: color 0.2s ease-out-sine;
+}
+
+.alertEnter,
+.alertAppear {
+    opacity: 0.01;
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(-90deg);
+    transition: all var(--speed--enter) ease-in-sine;
+}
+.alertEnterActive,
+.alertAppearActive {
+    opacity: 1;
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(0deg);
+    transition: all var(--speed--enter) ease-in-sine;
+}
+
+.alertLeave {
+    opacity: 1;
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(0deg);
+    transition: all var(--speed--leave--fast) ease-in-sine;
+}
+
+.alertLeaveActive {
+    transform-origin: 50% 0%;
+    transform: perspective(800px) rotateX(-90deg);
+    transition: all var(--speed--leave--fast) ease-in-sine;
+    opacity: 0.01;
+}
+
+.fadeEnter,
+.fadeAppear {
+    opacity: 0.01 !important;
+    transition: opacity var(--speed--enter) ease-in-sine !important;
+}
+.fadeEnterActive,
+.fadeAppearActive {
+    opacity: 1 !important;
+    transition: opacity var(--speed--enter) ease-in-sine !important;
+}
+
+.fadeLeave {
+    opacity: 1 !important;
+    transition: opacity var(--speed--leave) ease-in-sine !important;
+}
+
+.fadeLeaveActive {
+    transition: opacity var(--speed--leave) ease-out-sine !important;
+    opacity: 0.01 !important;
+}
+
+.progressBarEnter,
+.progressBarAppear {
+    opacity: 0.01 !important;
+    transition: opacity var(--speed--enter) ease-in-sine !important;
+}
+.progressBarEnterActive,
+.progressBarAppearActive {
+    opacity: 1 !important;
+    transition: opacity var(--speed--enter) ease-in-sine !important;
+}
+
+.progressBarLeave {
+    opacity: 1 !important;
+    transition: opacity var(--speed--leave) ease-in-sine !important;
+}
+
+.progressBarLeaveActive {
+    transition: opacity var(--speed--leave) ease-out-sine,
+        height var(--speed--leave) ease-out-sine !important;
+    height: 0 !important;
+    opacity: 0.01 !important;
+}

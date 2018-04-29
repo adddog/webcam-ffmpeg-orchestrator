@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'montserrat-light';
+  font-path: '../fonts/montserrat/montserrat-light-webfont';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-path: '../fonts/fontawesome/fontawesome-webfont';
+  font-weight: normal;
+  font-style: normal;
+}

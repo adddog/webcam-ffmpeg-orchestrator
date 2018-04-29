@@ -1,0 +1,34 @@
+:root {
+    --ff-base: 'montserrat-light', 'Helvetica', 'Arial', sans-serif;
+
+    --fs-title--main: 1.5em;
+    --fs-title: 0.938em;
+    --fs-base: 0.875em; /*14px*/
+    --fs-textIcon: calc(var(--fs-base) * 1.3);
+    --fs-textIcon--large: calc(var(--fs-title--main) * 2.0);
+    --fs-desc: 0.813em;
+    --fs-sm: 0.6em;
+    --fs-xsm: 0.5em;
+
+    --header-height: 60px;
+    --sidemenu-width: 120px;
+    --header-logo-width: 200px;
+    --lead-btn-height: 36px;
+
+    --padding-ssm: 0.3em;
+    --padding-sm: 0.4em;
+    --padding-l: 1.4em;
+    --padding-top: 0.4em;
+    --padding-smaller: 0.15em 0.24em 0.15em 0.24em;
+    --padding-small: var(--padding-ssm) var(--padding-sm) var(--padding-ssm) var(--padding-sm);
+    --card-padding--left: var(--padding-l);
+    --card-padding: 1em var(--card-padding--left) 1em var(--card-padding--left);
+    /*UI*/
+    --icons: 24px;
+    /*DASHBOARD*/
+    --upload-height: 60px;
+    /*LEAD DATA*/
+    --filter-height: 60px;
+
+    --arrow-size:calc(var(--icons) / 2);
+}

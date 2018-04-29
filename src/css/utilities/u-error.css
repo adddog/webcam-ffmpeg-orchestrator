@@ -1,0 +1,9 @@
+@import "vars/colors";
+
+.uError {
+    padding: 10px 14px 10px 14px;
+    background-color: var(--c-error);
+    border-radius: 6px;
+    animation: fadeIn 0.4s 1;
+}
+
